@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Books Library</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <section class="container rounded header">
+            <h2 class="fw-bold d-flex justify-content-center align-items-center p-3 text-light">Online Books Library
+            </h2>
+        </section>
+    </header>
+
+    <!-- Search Book Area -->
+    <section class="container rounded my-3 background-colour">
+        <h3 class="fw-bold d-flex justify-content-center align-items-center p-3">Search the book that you need</h3>
+        <div class="input-group mb-3 w-50 mx-auto p-3">
+            <input id="searchField" type="text" class="form-control" placeholder="Search by book name or author name"
+                aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button onclick="searchBook()" class="btn btn-secondary rounded" type="button">Search</button>
+        </div>
+        <div id="resultMessage">
+            <h5 class="d-flex justify-content-center align-items-center p-3 text-danger"><span
+                    class="bg-secondary rounded p-3" id="result">0000 </span>Result Founded</h5>
+        </div>
+    </section>
+
+    <!-- Search Result Area -->
+    <section class="container rounded my-5 " id="resultArea">
+        <div id="searchResult" class="row row-cols-1 
+        row-cols-md-3 g-4 p-3">
+        </div>
+    </section>
+
+    <footer>
+        <section class="container rounded footer-bg">
+            <p class="fw-bold d-flex justify-content-end align-items-center p-3 text-light">&copy;2021 Online Books Library</p>
+        </section>
+    </footer>
+
+    <!-- JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <script src="books.js"></script>
+</body>
+
+</html>
